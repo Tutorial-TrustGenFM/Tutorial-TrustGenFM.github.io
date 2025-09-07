@@ -9,18 +9,14 @@ if (navToggle && navMenu) {
     });
 }
 
-// Smooth scrolling for navigation links
+// Smooth scrolling for navigation links (use CSS scroll-margin-top)
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
-            const offsetTop = target.offsetTop - 80; // Account for fixed navbar
-            window.scrollTo({
-                top: offsetTop,
-                behavior: 'smooth'
-            });
-            
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
             // Close mobile menu if open
             if (navMenu && navMenu.classList.contains('active')) {
                 navMenu.classList.remove('active');
@@ -44,6 +40,25 @@ if (navbar) {
         }
     });
 }
+
+// Ensure content is not hidden under fixed navbar
+function adjustBodyOffset() {
+    const nav = document.querySelector('.navbar');
+    if (!nav) return;
+    document.body.style.paddingTop = nav.offsetHeight + 'px';
+}
+window.addEventListener('load', adjustBodyOffset);
+window.addEventListener('resize', adjustBodyOffset);
+
+// If page loads with a hash, align section below navbar
+window.addEventListener('load', () => {
+    if (window.location.hash) {
+        const el = document.querySelector(window.location.hash);
+        if (el) {
+            el.scrollIntoView({ behavior: 'auto', block: 'start' });
+        }
+    }
+});
 
 // Add styles for mobile navigation and scrolled navbar
 const style = document.createElement('style');
