@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Socially Responsible and Trustworthy Generative Foundation Models: Principles, Challenges, and Practices</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -17,7 +17,7 @@
                 <!-- <span>TrustGenFM</span> -->
             </div>
             <ul class="nav-menu">
-                <li><a href="#overview">Overview</a></li>
+                <li><a href="#introduction">Introduction</a></li>
                 <li><a href="#outline">Outline</a></li>
                 <li><a href="#presenters">Presenters</a></li>
             </ul>
@@ -29,187 +29,131 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">Trust and Responsibility in Generative Foundation Models</h1>
-                <p class="hero-subtitle">CIKM 2025 Tutorial - A Comprehensive Overview of Building Socially Responsible AI Systems</p>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <i class="fas fa-clock"></i>
-                        <span>3 Hours</span>
-                        <small>Half-day Session</small>
-                    </div>
-                    <div class="stat">
-                        <i class="fas fa-users"></i>
-                        <span>Interactive</span>
-                        <small>Hands-on Exercises</small>
-                    </div>
-                    <div class="stat">
-                        <i class="fas fa-graduation-cap"></i>
-                        <span>Expert-led</span>
-                        <small>Industry & Academia</small>
-                    </div>
-                </div>
-                <div class="hero-buttons">
-                    <a href="#outline" class="btn btn-primary">View Tutorial Outline</a>
-                    <a href="#presenters" class="btn btn-secondary">Meet the Presenters</a>
-                </div>
+    <!-- Academic Header -->
+    <header class="paper-header">
+        <div class="header-bg"></div>
+        <div class="header-left-panel"></div>
+        <div class="container">
+            <div class="paper-title-row">
+                <img src="images/cikm_logo.jpg" alt="CIKM 2025" class="paper-logo">
+                <h1 class="paper-title">Socially Responsible and Trustworthy Generative Foundation Models: Principles, Challenges, and Practices</h1>
+            </div>
+            <div class="paper-authors">
+                Yue Huang<sup>1</sup>, Canyu Chen<sup>2</sup>, Lu Cheng<sup>3</sup>, Bhavya Kailkhura<sup>4</sup>, Nitesh V. Chawla<sup>1</sup>, Xiangliang Zhang<sup>1</sup>
+            </div>
+            <div class="paper-affiliations">
+                <span><sup>1</sup> University of Notre Dame</span>
+                <span> · <sup>2</sup> Northwestern University</span>
+                <span> · <sup>3</sup> University of Illinois Chicago</span>
+                <span> · <sup>4</sup> Lawrence Livermore National Laboratory</span>
+            </div>
+            <p class="paper-meta">CIKM 2025 Tutorial · Half-day (3 hours) · Hands-on evaluation and mitigation</p>
+        </div>
+    </header>
+
+    <!-- Introduction -->
+    <section id="introduction" class="section">
+        <div class="container narrow">
+            <div class="section-header">
+                <h2>Introduction</h2>
+            </div>
+            <div class="paper-text">
+                <p>Generative foundation models (GenFMs), such as large language and multimodal models, are transforming information access, retrieval, and knowledge systems. However, their deployment raises critical concerns around social responsibility, including fairness, bias mitigation, environmental impact, misinformation, and safety. This tutorial provides a comprehensive overview of recent research and best practices at the intersection of GFMs and responsible AI. We introduce foundational concepts, evaluation metrics, and mitigation strategies, with case studies across various domains (e.g., text, vision, code). The tutorial is designed for researchers and practitioners interested in building or auditing socially responsible GFMs. We highlight open challenges and propose future research directions relevant to the CIKM community.</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Audience, Prerequisites & Benefits -->
+    <section id="audience" class="section bg-light">
+        <div class="container narrow">
+            <div class="section-header">
+                <h2>Audience & Prerequisites & Benefits</h2>
+            </div>
+            <div class="paper-text">
+                <p><strong>Target Audience &amp; Prerequisites.</strong> This tutorial is designed for researchers, graduate students, and industry professionals in machine learning, information retrieval, data science, and AI ethics or governance. No specialized background is required beyond a general familiarity with artificial intelligence concepts. Prior experience with deep learning or generative models will be helpful.</p>
+                <p><strong>Benefits.</strong> Attendees will gain a comprehensive understanding of responsible AI practices as they relate to generative foundation models, including exposure to practical auditing workflows and hands-on tools for evaluating trustworthiness. The tutorial will equip participants with the knowledge and resources needed to identify and address social and ethical risks in real-world applications, ultimately enabling them to contribute to the development of more trustworthy and socially responsible AI systems.</p>
+            </div>
+            <div class="table-wrapper">
+                <div class="table-title">Table 1: Tutorial outline and key points</div>
+                <table class="academic-table">
+                    <thead>
+                        <tr>
+                            <th>Section Title</th>
+                            <th>Key Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>The Dual Nature of GenFMs and the Need for Responsibility</strong></td>
+                            <td>GenFMs as assistants and simulators; new risks in information systems; importance of responsibility for CIKM.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Understanding Social Responsibility: Taxonomy and Case Studies</strong></td>
+                            <td>Six key risk dimensions; real-world failure cases; hands-on prompt-based risk audits.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Evaluation Methods and Benchmarks</strong></td>
+                            <td>Key benchmarks and metrics; evaluation pipelines; hands-on open-source tools.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Enhancement Strategies for Responsible GenFMs</strong></td>
+                            <td>Main mitigation techniques; effectiveness and scalability; hands-on simple mitigations.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Governance and Policy Perspectives</strong></td>
+                            <td>Overview of policy frameworks; community standards; institutional roles.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Open Challenges and Community Discussion</strong></td>
+                            <td>Key open questions; CIKM community engagement; interactive discussion.</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </section>
 
-    <!-- Overview Section -->
-    <section id="overview" class="section">
-        <div class="container">
+    <!-- Outline -->
+    <section id="outline" class="section">
+        <div class="container narrow">
             <div class="section-header">
-                <h2>Overview</h2>
+                <h2>Outline</h2>
             </div>
-            <div class="overview-text">
-                <p>Generative foundation models (GenFMs), such as large language and multimodal models, are transforming information access, retrieval, and knowledge systems. However, their deployment raises critical concerns around social responsibility, including fairness, bias mitigation, environmental impact, misinformation, and safety.</p>
-                
-                <p>This tutorial provides a comprehensive overview of recent research and best practices at the intersection of GenFMs and responsible AI. We introduce foundational concepts, evaluation metrics, and mitigation strategies, with case studies across various domains (e.g., text, vision, code).</p>
-                
-                <p>The tutorial is designed for researchers and practitioners interested in building or auditing socially responsible GenFMs. We highlight open challenges and propose future research directions relevant to the CIKM community.</p>
+            <div class="subsection">
+                <h3>The Dual Nature of GenFMs and the Need for Responsibility (20 minutes)</h3>
+                <p>We begin by outlining the growing impact of Generative Foundation Models (GenFMs) in real-world systems and why ensuring their responsible behavior is a critical challenge. GenFMs serve in two primary roles: as <em>assistants</em>, they help users accomplish daily tasks such as creative writing, translation, code generation, and search augmentation; as <em>simulators</em>, they generate synthetic data, simulate user behavior, or model complex scenarios, especially used in scientific studies. These roles demonstrate that GenFMs are no longer passive technologies—they actively shape how individuals interact with information and systems. As GenFMs gain broader adoption in search engines, conversational agents, recommendation systems, and decision-making pipelines, their influence over knowledge access and user experience grows. This elevates the importance of building <em>responsible and trustworthy</em> GenFMs. We motivate this need by highlighting societal risks such as misinformation, exclusionary bias, and unintended memorization. These concerns are especially relevant to the CIKM community, whose core interests include information retrieval, data management, and the deployment of intelligent systems in real-world settings.</p>
             </div>
-        </div>
-    </section>
 
-    <!-- Tutorial Outline Section -->
-    <section id="outline" class="section bg-light">
-        <div class="container">
-            <div class="section-header">
-                <h2>Tutorial Outline</h2>
-                <p>Six comprehensive modules covering theory, practice, and policy perspectives</p>
+            <div class="subsection">
+                <h3>Understanding Social Responsibility: Taxonomy and Case Studies (45 minutes)</h3>
+                <p>This part presents a structured understanding of the major risks and responsibility dimensions in GenFMs. We introduce a taxonomy that covers most of the responsibility and trustworthiness-related dimensions: <strong>Safety:</strong> Preventing outputs that cause harm or enable malicious behavior. <strong>Privacy:</strong> Avoiding unintended memorization or exposure of sensitive data. <strong>Robustness:</strong> Ensuring stability under distribution shifts and adversarial prompts. <strong>Truthfulness:</strong> Reducing hallucinations and factual inaccuracies. <strong>Fairness:</strong> Addressing demographic, geographic, or ideological biases. <strong>Machine Ethics:</strong> Focusing on ensuring that AI-powered machines exhibit ethically acceptable behavior.</p>
+                <p>Each dimension is grounded in illustrative case studies from both open-source and commercial GenFMs. We examine well-documented failures, including biased healthcare advice, offensive language generation, and identity leakage. These cases demonstrate how technical issues translate into measurable societal harms. To deepen participants’ understanding, we integrate hands-on exercises where attendees explore failure modes using curated prompts and open-source diagnostic tools (e.g., toxicity detectors like OpenAI moderator as well as Llama Guard, and bias probes).</p>
             </div>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker">
-                        <i class="fas fa-play"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="timeline-time">20 minutes</div>
-                        <h3>The Dual Nature of GenFMs and the Need for Responsibility</h3>
-                        <p>Understanding how GenFMs serve as assistants and simulators, and why responsible behavior is critical. We'll explore societal risks including misinformation, bias, and privacy concerns.</p>
-                        <div class="timeline-tags">
-                            <span class="tag">Foundation</span>
-                            <span class="tag">Risk Assessment</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-marker">
-                        <i class="fas fa-search"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="timeline-time">45 minutes</div>
-                        <h3>Understanding Social Responsibility: Taxonomy and Case Studies</h3>
-                        <p>A structured framework covering six key dimensions: Safety, Privacy, Robustness, Truthfulness, Fairness, and Machine Ethics. Includes hands-on exercises with diagnostic tools.</p>
-                        <div class="responsibility-dimensions">
-                            <div class="dimension">
-                                <i class="fas fa-shield-alt"></i>
-                                <span>Safety</span>
-                            </div>
-                            <div class="dimension">
-                                <i class="fas fa-user-secret"></i>
-                                <span>Privacy</span>
-                            </div>
-                            <div class="dimension">
-                                <i class="fas fa-mountain"></i>
-                                <span>Robustness</span>
-                            </div>
-                            <div class="dimension">
-                                <i class="fas fa-search"></i>
-                                <span>Truthfulness</span>
-                            </div>
-                            <div class="dimension">
-                                <i class="fas fa-balance-scale"></i>
-                                <span>Fairness</span>
-                            </div>
-                            <div class="dimension">
-                                <i class="fas fa-brain"></i>
-                                <span>Machine Ethics</span>
-                            </div>
-                        </div>
-                        <div class="timeline-tags">
-                            <span class="tag">Hands-on</span>
-                            <span class="tag">Case Studies</span>
-                            <span class="tag">Tools</span>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="timeline-break">
-                    <i class="fas fa-coffee"></i>
-                    <span>15-minute Break</span>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-marker">
-                        <i class="fas fa-chart-bar"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="timeline-time">20 minutes</div>
-                        <h3>Evaluation and Benchmarks</h3>
-                        <p>Introduction to evaluation frameworks including BBQ, TruthfulQA, HarmBench, and TrustLLM. Hands-on experience with tools like OpenAI Evals and AI Fairness 360.</p>
-                        <div class="timeline-tags">
-                            <span class="tag">Benchmarks</span>
-                            <span class="tag">Metrics</span>
-                            <span class="tag">Evaluation</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-marker">
-                        <i class="fas fa-wrench"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="timeline-time">20 minutes</div>
-                        <h3>Enhancement for Responsible GenFMs</h3>
-                        <p>Practical mitigation strategies including data filtering, prompt steering, model fine-tuning (RLHF), and post-processing techniques like RAG and detoxification.</p>
-                        <div class="timeline-tags">
-                            <span class="tag">Mitigation</span>
-                            <span class="tag">RLHF</span>
-                            <span class="tag">RAG</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-marker">
-                        <i class="fas fa-gavel"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="timeline-time">20 minutes</div>
-                        <h3>Governance and Policy Perspectives</h3>
-                        <p>Overview of regulatory frameworks (EU AI Act, NIST AI RMF), industry initiatives, and community standards for responsible AI deployment.</p>
-                        <div class="timeline-tags">
-                            <span class="tag">Policy</span>
-                            <span class="tag">Governance</span>
-                            <span class="tag">Standards</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="timeline-item">
-                    <div class="timeline-marker">
-                        <i class="fas fa-comments"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="timeline-time">25 minutes</div>
-                        <h3>Open Challenges and Community Discussion</h3>
-                        <p>Interactive discussion on adaptive evaluation, dual effects of alignment, and advanced AI risks. Collaborative exploration of future research directions.</p>
-                        <div class="timeline-tags">
-                            <span class="tag">Discussion</span>
-                            <span class="tag">Future Research</span>
-                            <span class="tag">Interactive</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="subsection">
+                <h3>Evaluation and Benchmarks (20 minutes)</h3>
+                <p>We introduce the first phase of the 2E strategy: <em>Evaluation</em>. Participants will learn about widely used benchmarks and diagnostic datasets, such as traditional datasets—BBQ, TruthfulQA, and RealToxicityPrompts, and novel benchmarks like HarmBench, TrustLLM, and DecodingTrust. We will also introduce the metrics for evaluating fairness, safety, and so on. We also present tools like OpenAI Evals, TrustEval, and AI Fairness 360. Integrated exercises will allow participants to apply these tools and observe how GenFMs behave under standard evaluation settings.</p>
             </div>
+
+            <div class="subsection">
+                <h3>Enhancement for Responsible GenFMs (20 minutes)</h3>
+                <p>This section focuses on the second phase of the 2E strategy: <em>Enhancement</em>. We present strategies to mitigate model risks through interventions at different stages: data-level filtering, prompt-level steering, model fine-tuning (e.g., RLHF), and post-processing (e.g., detoxification, Retrieval-Augmented Generation (RAG)). Participants will experiment with basic mitigation techniques using provided code notebooks and re-evaluate model behavior after intervention.</p>
+            </div>
+
+            <div class="subsection">
+                <h3>Governance and Policy Perspectives (20 minutes)</h3>
+                <p>Beyond technical fixes, this module explores institutional, regulatory, and industrial mechanisms for ensuring GenFM responsibility. We present recent developments such as the EU AI Act and the NIST AI RMF, as well as efforts from the open-source community (e.g., OpenRAIL, BigScience governance). In addition, we discuss major enterprise-led initiatives, such as OpenAI’s system cards and model usage guidelines, Google’s Responsible AI Principles, Meta’s Llama Responsible Use Guide, and Microsoft’s Responsible AI Standard. These industry frameworks set standards for risk assessment, transparency, and responsible deployment at scale.</p>
+            </div>
+
+            
+
+            <div class="subsection">
+                <h3>Open Challenges and Community Discussion (25 minutes)</h3>
+                <p>In closing, we highlight three pressing open challenges for GenFM trustworthiness. First, as models and their applications continuously evolve, evaluation and mitigation strategies must be adaptive and dynamic to remain effective without sacrificing utility or user experience. Second, alignment techniques can have dual effects—improving safety in some contexts while inadvertently introducing new vulnerabilities or biases—underscoring the need for more nuanced approaches. Third, addressing advanced AI risks requires a combination of technical innovation, interdisciplinary collaboration, and forward-looking governance frameworks to proactively manage emerging threats.</p>
+            </div>
+
+            
         </div>
     </section>
 
@@ -228,7 +172,7 @@
                         <h4>Yue Huang</h4>
                         <p class="presenter-title">Ph.D. Student, Computer Science and Engineering, University of Notre Dame</p>
                         <div class="presenter-bio">
-                            <p>Yue Huang is a Ph.D. student in Computer Science and Engineering at the University of Notre Dame. He earned his B.S. in Computer Science from Sichuan University. His research investigates the trustworthiness and social responsibility of foundation models. Yue has published extensively at premier venues including NeurIPS, ICLR, ICML, ACL, EMNLP, NAACL, CVPR, and IJCAI. His work has been highlighted by the U.S. Department of Homeland Security and recognized with the Microsoft Accelerating Foundation Models Research Award and the KAUST AI Rising Star Award (2025). He has delivered invited talks on "Trustworthiness in Large Language Models" and "Socially Responsible Generative Foundation Models" at UIUC, USC, UVA, IBM Research, and other institutions.</p>
+                            <p>Yue Huang is a Ph.D. student in Computer Science and Engineering at the University of Notre Dame. His research investigates the trustworthiness and social responsibility of foundation models. Yue has published extensively at premier venues including NeurIPS, ICLR, ICML, ACL, EMNLP, NAACL, CVPR, and IJCAI. His work has been highlighted by the U.S. Department of Homeland Security, and recognized with the Microsoft Accelerating Foundation Models Research Award and the KAUST AI Rising Star Award (2025).</p>
                         </div>
                     </div>
                 </div>
@@ -254,7 +198,7 @@
                         <h4>Lu Cheng</h4>
                         <p class="presenter-title">Assistant Professor, Computer Science, University of Illinois Chicago</p>
                         <div class="presenter-bio">
-                            <p>Lu Cheng is an assistant professor in Computer Science at the University of Illinois Chicago. Her research interests are responsible and reliable AI, causal machine learning, and AI for social good. She is the recipient of the PAKDD Best Paper Award, Google Research Scholar Award, Amazon Research Award, Cisco Research Faculty award, AAAI New Faculty Highlights, 2022 INNS Doctoral Dissertation Award (runner-up), 2021 ASU Engineering Dean's Dissertation Award, SDM Best Poster Award, IBM Ph.D. Social Good Fellowship, Visa Research Scholarship, among others. She co-authors two books: "Causal Inference and Machine Learning (Chinese)" and "Socially Responsible AI: Theories and Practices".</p>
+                            <p>Lu Cheng is an assistant professor in Computer Science at the University of Illinois Chicago. Her research interests are responsible and reliable AI, causal machine learning, and AI for social good. She is the recipient of the PAKDD Best Paper Award, Google Research Scholar Award, Amazon Research Award, Cisco Research Faculty award, AAAI New Faculty Highlights, 2022 INNS Doctoral Dissertation Award (runner-up), 2021 ASU Engineering Dean's Dissertation Award, SDM Best Poster Award, IBM Ph.D. Social Good Fellowship, Visa Research Scholarship, among others. She co-authors two books: “Causal Inference and Machine Learning (Chinese)” and “Socially Responsible AI: Theories and Practices”.</p>
                         </div>
                     </div>
                 </div>
@@ -280,7 +224,7 @@
                         <h4>Nitesh Chawla</h4>
                         <p class="presenter-title">Frank M. Freimann Professor, University of Notre Dame</p>
                         <div class="presenter-bio">
-                            <p>Nitesh Chawla is the Frank M. Freimann Professor of Computer Science and Engineering at the University of Notre Dame. He is the Founding Director of the Lucy Family Institute for Data and Society. He is an expert in artificial intelligence, data science, and network science, and is motivated by the question of how technology can advance the common good through interdisciplinary research. He is the recipient of 2015 IEEE CIS Outstanding Early Career Award; the IBM Watson Faculty Award; the IBM Big Data and Analytics Faculty Award; and the 1st Source Bank Technology Commercialization Award. He was recognized with the Rodney F. Ganey Award and Michiana 40 under 40 honor. He is a Fellow of both ACM and IEEE.</p>
+                            <p>Nitesh Chawla is the Frank M. Freimann Professor of Computer Science and Engineering at the University of Notre Dame. He is the Founding Director of the Lucy Family Institute for Data and Society. He is an expert in artificial intelligence, data science, and network science. He is the recipient of 2015 IEEE CIS Outstanding Early Career Award; the IBM Watson Faculty Award; the IBM Big Data and Analytics Faculty Award; and the 1st Source Bank Technology Commercialization Award. He was recognized with the Rodney F. Ganey Award and Michiana 40 under 40 honor. He is a Fellow of both ACM and IEEE.</p>
                         </div>
                     </div>
                 </div>
@@ -293,7 +237,7 @@
                         <h4>Xiangliang Zhang</h4>
                         <p class="presenter-title">Leonard C. Bettex Collegiate Professor, University of Notre Dame</p>
                         <div class="presenter-bio">
-                            <p>Xiangliang Zhang is a Leonard C. Bettex Collegiate Professor in the Department of Computer Science and Engineering, University of Notre Dame. She was an Associate Professor in Computer Science at the KAUST. Her main research interests and experiences are in machine learning and data mining. She has published more than 270 refereed papers in leading international conferences and journals. She serves as associate editor of IEEE Transactions on Dependable and Secure Computing, Information Sciences, and International Journal of Intelligent Systems, and regularly serves as area chair or on the (senior) program committee of IJCAI, SIGKDD, NeurIPS, AAAI, ICML, and WSDM.</p>
+                            <p>Xiangliang Zhang is a Leonard C. Bettex Collegiate Professor in the Department of Computer Science and Engineering, University of Notre Dame. Her main research interests and experiences are in machine learning and data mining. She has published more than 270 refereed papers in leading international conferences and journals. She serves as associate editor of IEEE Transactions on Dependable and Secure Computing, Information Sciences, and International Journal of Intelligent Systems, and regularly serves as area chair or on the (senior) program committee of IJCAI, SIGKDD, NeurIPS, AAAI, ICML, and WSDM.</p>
                         </div>
                     </div>
                 </div>
