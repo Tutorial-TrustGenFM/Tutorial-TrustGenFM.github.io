@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Georgia', 'Times New Roman', Times, serif;
-    line-height: 1.6;
+    line-height: 1.5;
     color: #2d3748;
     overflow-x: hidden;
     font-weight: 400;
@@ -28,8 +28,8 @@ body {
     background: rgba(255, 255, 255, 1);
     backdrop-filter: blur(10px);
     z-index: 1000;
-    padding: 1rem 0;
-    border-bottom: 1px solid #ffffff;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e2e8f0;
 }
 
 .nav-container {
@@ -48,11 +48,11 @@ body {
     font-weight: 700;
     font-size: 1.2rem;
     color: #685959;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Georgia', serif;
 }
 
 .cikm-logo {
-    height: 80px;
+    height: 56px;
     width: auto;
     object-fit: contain;
 }
@@ -60,7 +60,7 @@ body {
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: 2rem;
+    gap: 1.2rem;
 }
 
 .nav-menu a {
@@ -69,7 +69,7 @@ body {
     font-weight: 500;
     transition: color 0.3s ease;
     position: relative;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Georgia', serif;
 }
 
 .nav-menu a:hover {
@@ -107,11 +107,11 @@ body {
 
 /* Hero Section */
 .hero {
-    min-height: 100vh;
+    min-height: 70vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, #718096 0%, #4a5568 100%);
-    color: white;
+    background: #f7fafc;
+    color: #2d3748;
     position: relative;
 }
 
@@ -123,25 +123,25 @@ body {
 }
 
 .hero-title {
-    font-size: 3.5rem;
+    font-size: 2.6rem;
     font-weight: 700;
-    line-height: 1.2;
-    margin-bottom: 1rem;
+    line-height: 1.15;
+    margin-bottom: 0.6rem;
     font-family: 'Georgia', serif;
 }
 
 .hero-subtitle {
-    font-size: 1.3rem;
-    margin-bottom: 2rem;
+    font-size: 1.05rem;
+    margin-bottom: 1.2rem;
     opacity: 0.9;
     font-family: 'Georgia', serif;
-    font-style: italic;
+    font-style: normal;
 }
 
 .hero-stats {
     display: flex;
-    gap: 2rem;
-    margin-bottom: 3rem;
+    gap: 1.2rem;
+    margin-bottom: 1.5rem;
     justify-content: center;
 }
 
@@ -150,14 +150,14 @@ body {
 }
 
 .stat i {
-    font-size: 2rem;
+    font-size: 1.4rem;
     display: block;
-    margin-bottom: 0.5rem;
-    color: #e2e8f0;
+    margin-bottom: 0.3rem;
+    color: #4a5568;
 }
 
 .stat span {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
     display: block;
     font-family: 'Inter', sans-serif;
@@ -165,26 +165,26 @@ body {
 
 .stat small {
     opacity: 0.8;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-family: 'Inter', sans-serif;
 }
 
 .hero-buttons {
     display: flex;
-    gap: 1rem;
+    gap: 0.75rem;
     justify-content: center;
 }
 
 .btn {
-    padding: 1rem 2rem;
+    padding: 0.6rem 1.2rem;
     border: none;
-    border-radius: 4px;
+    border-radius: 2px;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 500;
     transition: all 0.3s ease;
     cursor: pointer;
     display: inline-block;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Georgia', serif;
 }
 
 .btn-primary {
@@ -199,19 +199,19 @@ body {
 
 .btn-secondary {
     background: transparent;
-    color: white;
-    border: 2px solid white;
+    color: #4a5568;
+    border: 1px solid #4a5568;
 }
 
 .btn-secondary:hover {
-    background: white;
-    color: #4a5568;
-    transform: translateY(-1px);
+    background: #4a5568;
+    color: white;
+    transform: none;
 }
 
 /* Section Styles */
 .section {
-    padding: 5rem 0;
+    padding: 3rem 0;
 }
 
 .bg-light {
@@ -220,24 +220,24 @@ body {
 
 .section-header {
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .section-header h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 0.6rem;
     color: #2d3748;
     font-family: 'Georgia', serif;
 }
 
 .section-header p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #718096;
     max-width: 600px;
     margin: 0 auto;
     font-family: 'Georgia', serif;
-    font-style: italic;
+    font-style: normal;
 }
 
 /* Overview Section */
@@ -247,9 +247,9 @@ body {
 }
 
 .overview-text p {
-    margin-bottom: 1.5rem;
-    font-size: 1.1rem;
-    line-height: 1.8;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.6;
     color: #4a5568;
     text-align: justify;
 }
@@ -268,7 +268,7 @@ body {
 .timeline::before {
     content: '';
     position: absolute;
-    left: 30px;
+    left: 24px;
     top: 0;
     bottom: 0;
     width: 2px;
@@ -277,76 +277,76 @@ body {
 
 .timeline-item {
     position: relative;
-    margin-bottom: 3rem;
-    padding-left: 80px;
+    margin-bottom: 1.5rem;
+    padding-left: 56px;
 }
 
 .timeline-marker {
     position: absolute;
     left: 0;
     top: 0;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     background: #4a5568;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1rem;
     z-index: 2;
 }
 
 .timeline-content {
     background: white;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.2rem;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
     border: 1px solid #e2e8f0;
     transition: transform 0.3s ease;
 }
 
 .timeline-content:hover {
-    transform: translateX(5px);
+    transform: none;
 }
 
 .timeline-time {
     color: #4a5568;
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 0.5rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.3rem;
     font-family: 'Inter', sans-serif;
 }
 
 .timeline-content h3 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 600;
-    margin-bottom: 1rem;
+    margin-bottom: 0.6rem;
     color: #2d3748;
     font-family: 'Georgia', serif;
 }
 
 .timeline-content p {
     color: #718096;
-    line-height: 1.6;
-    margin-bottom: 1rem;
+    line-height: 1.5;
+    margin-bottom: 0.6rem;
     text-align: justify;
 }
 
 .timeline-tags {
     display: flex;
-    gap: 0.5rem;
+    gap: 0.4rem;
     flex-wrap: wrap;
 }
 
 .tag {
     background: #edf2f7;
     color: #4a5568;
-    padding: 0.3rem 0.8rem;
-    border-radius: 4px;
-    font-size: 0.8rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 2px;
+    font-size: 0.75rem;
     font-weight: 500;
     font-family: 'Inter', sans-serif;
 }
@@ -355,15 +355,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
-    margin: 2rem 0;
+    gap: 0.6rem;
+    margin: 1.2rem 0;
     color: #718096;
     font-weight: 500;
     font-family: 'Inter', sans-serif;
 }
 
 .timeline-break i {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #a0aec0;
 }
 
@@ -371,18 +371,18 @@ body {
 .responsibility-dimensions {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    margin: 1.5rem 0;
+    gap: 0.6rem;
+    margin: 1rem 0;
 }
 
 .dimension {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    padding: 0.8rem;
+    gap: 0.4rem;
+    padding: 0.5rem;
     background: #f7fafc;
-    border-radius: 4px;
-    font-size: 0.9rem;
+    border-radius: 2px;
+    font-size: 0.85rem;
     font-weight: 500;
     border: 1px solid #e2e8f0;
     font-family: 'Inter', sans-serif;
@@ -403,34 +403,34 @@ body {
 
 .presenter-item {
     background: white;
-    padding: 3rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    border-radius: 4px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
     border: 1px solid #e2e8f0;
     display: flex;
     align-items: flex-start;
-    gap: 3rem;
+    gap: 1.5rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .presenter-item:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    transform: none;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
 }
 
 .presenter-photo {
-    width: 180px;
-    height: 180px;
-    border-radius: 8px;
+    width: 140px;
+    height: 140px;
+    border-radius: 4px;
     background: #f7fafc;
-    border: 2px solid #e2e8f0;
+    border: 1px solid #e2e8f0;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
     color: #a0aec0;
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
     font-family: 'Inter', sans-serif;
     overflow: hidden;
@@ -440,7 +440,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 4px;
 }
 
 .presenter-info {
@@ -448,9 +448,9 @@ body {
 }
 
 .presenter-item h4 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 600;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem;
     color: #2d3748;
     font-family: 'Georgia', serif;
 }
@@ -458,20 +458,20 @@ body {
 .presenter-title {
     color: #4a5568;
     font-weight: 500;
-    margin-bottom: 0.8rem;
-    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
     font-family: 'Inter', sans-serif;
 }
 
 .presenter-bio {
     color: #718096;
-    line-height: 1.6;
-    font-size: 0.95rem;
+    line-height: 1.5;
+    font-size: 0.9rem;
     text-align: justify;
 }
 
 .presenter-bio p {
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.5rem;
 }
 
 .presenter-bio p:last-child {
@@ -484,14 +484,14 @@ body {
 }
 
 .presenter-bio ul {
-    margin-bottom: 1rem;
-    margin-top: 0.5rem;
+    margin-bottom: 0.6rem;
+    margin-top: 0.4rem;
     padding-left: 1.5rem;
 }
 
 .presenter-bio li {
-    margin-bottom: 0.3rem;
-    line-height: 1.5;
+    margin-bottom: 0.2rem;
+    line-height: 1.4;
 }
 
 .presenter-bio a {
